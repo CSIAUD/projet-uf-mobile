@@ -1,0 +1,8 @@
+{
+  "name": "ProjetUF_mobile",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "da5ee56f"
+}
