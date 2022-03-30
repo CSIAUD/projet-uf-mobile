@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, OnInit } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
 
@@ -14,4 +14,13 @@ import { AppRoutingModule } from './app-routing.module';
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class AppModule implements OnInit {
+  
+  public logo: String;
+  
+  constructor() {}
+
+  ngOnInit() {
+    this.logo = '/ressources/icon.png';
+	}
+}

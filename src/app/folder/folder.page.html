@@ -1,9 +1,12 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <ion-buttons slot="start">
+    <ion-item slot="start" routerDirection="root" routerLink="/landing" lines="none" detail="false" routerLinkActive="selected">
+      <ion-img style="width:75px" src="/assets/icon/icon.png"></ion-img>
+    </ion-item>
+    <ion-title>{{ folder }}</ion-title>
+    <ion-buttons slot="end">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>{{ folder }}</ion-title>
   </ion-toolbar>
 </ion-header>
 

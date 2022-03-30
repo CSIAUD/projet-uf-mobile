@@ -2,25 +2,40 @@
   <ion-split-pane contentId="main-content">
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
-        <ion-list id="inbox-list">
-          <ion-list-header>Inbox</ion-list-header>
-          <ion-note>hi@ionicframework.com</ion-note>
+        <ion-list id="menu-list">
+          <ion-list-header>Écuries de persévère</ion-list-header>
+          
+          <ion-note>Karine MASSOT</ion-note>
 
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
-              <ion-icon slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
               <ion-label>{{ p.title }}</ion-label>
             </ion-item>
           </ion-menu-toggle>
-        </ion-list>
 
-        <ion-list id="labels-list">
-          <ion-list-header>Labels</ion-list-header>
-
-          <ion-item *ngFor="let label of labels" lines="none">
-            <ion-icon slot="start" ios="bookmark-outline" md="bookmark-sharp"></ion-icon>
-            <ion-label>{{ label }}</ion-label>
-          </ion-item>
+          <!-- ====================================================================================== -->
+          <ion-accordion-group>
+            <ion-accordion *ngFor="let tog of toggles"> 
+              <ion-item slot="header">
+              <ion-label>{{ tog.title }}</ion-label>
+            </ion-item>
+            
+            <ion-menu-toggle slot="content" *ngFor="let elem of tog.pages; let i = index">
+              <ion-item routerDirection="root" [routerLink]="[elem.url]" lines="none" detail="false" routerLinkActive="selected">
+                <ion-label style="padding-left: 15px; font-weight: lighter;">{{ elem.title }}</ion-label>
+              </ion-item>
+            </ion-menu-toggle>
+            </ion-accordion>
+          </ion-accordion-group>
+  
+          <!-- ====================================================================================== -->
+  
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of lastPages; let i = index">
+            <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
+              <ion-label>{{ p.title }}</ion-label>
+            </ion-item>
+          </ion-menu-toggle>
+  
         </ion-list>
       </ion-content>
     </ion-menu>

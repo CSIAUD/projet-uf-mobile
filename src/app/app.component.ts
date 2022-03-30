@@ -6,13 +6,40 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Inbox', url: '/folder/Inbox', icon: 'mail' },
-    { title: 'Outbox', url: '/folder/Outbox', icon: 'paper-plane' },
-    { title: 'Favorites', url: '/folder/Favorites', icon: 'heart' },
-    { title: 'Archived', url: '/folder/Archived', icon: 'archive' },
-    { title: 'Trash', url: '/folder/Trash', icon: 'trash' },
-    { title: 'Spam', url: '/folder/Spam', icon: 'warning' },
+    { title: 'Accueil', url: '/landing'},
+    { title: 'Équipe', url: '/team'},
+    { title: 'Instalations', url: '/installations'},
   ];
-  public labels = ['Family', 'Friends', 'Notes', 'Work', 'Travel', 'Reminders'];
+
+  public toggles = [
+    { 
+      title: "Prestations", 
+      pages: [
+        { title: "Travail du cheval et enseignement", url: "/folder/travail"},
+        { title: "Formules et tarifs", url: "/folder/formules"},
+        { title: "Stages", url: "/folder/stages"}
+      ]
+    },
+    { 
+      title: "Philosophie",
+      pages: [
+        { title: "De Travail", url: "/folder/travail"},
+        { title: "Comfortable Natural Life Paddock", url: "/folder/natural"}
+      ]
+    },
+    { 
+      title: "À nos côtés", 
+      pages: [
+        { title: "Ils en parlent", url: "/folder/talk"},
+        { title: "Nos partenaires", url: "/folder/partners"},
+        { title: "La presse", url: "/folder/press"}
+      ]
+    },
+  ];
+
+  public lastPages = [
+    { title: 'Contact', url: '/folder/contact'},
+    { title: 'Blog', url: '/folder/blog'}
+  ];
   constructor() {}
 }
