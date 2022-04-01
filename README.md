@@ -23,7 +23,9 @@
 - Base de données => MySQL
 
 <br>
+
 ---
+
 <br>
 
 # Lancer le projet
@@ -54,9 +56,13 @@ $ npm install -g @ionic/cli
 ```sh
 npm install -D tailwindcss
 ```
+
 <br>
+
 ---
+
 <br>
+
 ## Lancements
 Dans un CMD dans le dossier du projet :
 
