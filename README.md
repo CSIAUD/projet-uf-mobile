@@ -18,8 +18,8 @@
 - Identique au site de gestion des écuries
 
 ### Technologies utilisées :
-- Front-end => [IONIC](https://ionicframework.com "IONIC") + [Angular](https://angular.io "AngularJS") + [TailwindCSS](https://tailwindcss.com "TailwindCSS")
-- Back-end / API / => Strapi
+- Front-end => [IONIC](https://ionicframework.com "Version mobile") + [Angular](https://angular.io "Contenu") + [TailwindCSS](https://tailwindcss.com "Visuel")
+- Back-end / API / => [Strapi](https://strapi.io "Gestion du back-end")
 - Base de données => MySQL
 
 <br>
