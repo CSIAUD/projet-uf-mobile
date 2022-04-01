@@ -28,11 +28,30 @@
 ### Après avoir récupéré le projet
 Dans un CMD dans le dossier du projet :
 
-Installation de IONIC
+##### Installation de npm
 
 ```sh
 npm install 
 ```
+
+##### Installation de IONIC
+
+SI vous avez déjà ionic :
+```sh
+$ npm uninstall -g ionic
+$ npm install -g @ionic/cli
+```
+SINON
+```sh
+$ npm install -g @ionic/cli
+```
+
+##### Installation de TailwindCSS
+
+```sh
+npm install -D tailwindcss
+```
+
 ## Lancements
 Dans un CMD dans le dossier du projet :
 
@@ -58,4 +77,4 @@ ionic serve --external
 
 ## Contributeurs ✨
 
-<table><tr><td align="center"><a href="https://github.com/CSIAUD"><img src="https://avatars.githubusercontent.com/u/74303569?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Cyprien SIAUD<br>💻🎨⚠️</b></sub></a></td><td align="center"><a href="https://github.com/Benji290402"><img src="https://avatars.githubusercontent.com/u/71979279?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Benjamin VIAL -- SIMON<br>💻🎨⚠️</b></sub></a></td><td align="center"><a href="https://github.com/Mateopalm"><img src="https://avatars.githubusercontent.com/u/73243815?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Matéo PALMIER<br>⚠️</b></sub></a></td></tr></table>
+<table><tr><td align="center"><a href="https://github.com/CSIAUD"><img src="https://avatars.githubusercontent.com/u/74303569?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Cyprien SIAUD<br>💻🎨⚠️</b></sub></a></td><td align="center"><a href="https://github.com/Benji290402"><img src="https://avatars.githubusercontent.com/u/71979279?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Benjamin VIAL -- SIMON<br>💻🎨⚠️</b></sub></a></td><td align="center"><a href="https://github.com/Mateopalm"><img src="https://avatars.githubusercontent.com/u/73243815?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Matéo PALMIERI<br>⚠️</b></sub></a></td></tr></table>
