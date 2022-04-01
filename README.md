@@ -28,13 +28,13 @@
 ### Après avoir récupéré le projet
 Dans un CMD dans le dossier du projet :
 
-##### Installation de npm
+#### Installation de npm
 
 ```sh
 npm install 
 ```
 
-##### Installation de IONIC
+#### Installation de IONIC
 
 SI vous avez déjà ionic :
 ```sh
@@ -46,7 +46,7 @@ SINON
 $ npm install -g @ionic/cli
 ```
 
-##### Installation de TailwindCSS
+#### Installation de TailwindCSS
 
 ```sh
 npm install -D tailwindcss
