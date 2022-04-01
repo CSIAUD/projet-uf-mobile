@@ -21,7 +21,9 @@ Réalisation d'une application pour la partie gestion des écuries :
 - Front-end => [IONIC](https://ionicframework.com "IONIC") + [AngularJS](https://angular.io "AngularJS") + [TailwindCSS](https://tailwindcss.com "TailwindCSS")
 - Back-end / API / Base de données => Strapi
 
-[========]
+---
+---
+
 # Lancer le projet
 ## Installations
 ### Après avoir récupéré le projet
@@ -40,6 +42,7 @@ Lancement de TailwindCSS
 ```sh
 npx tailwindcss build -i .\src\assets\css\style.css -o .\src\assets\css\output.css --watch
 ```
+---
 Dans un second CMD dans le dossier du projet :
 
 Lancement de IONIC
