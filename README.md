@@ -1,8 +1,4 @@
-# Projet Professionnel :  Les écuries de persévère
-#### Étudiants :
-###### Cyprien SIAUD
-###### Benjamin VIAL -- SIMON
-###### Matéo PALMIERI
+# Projet Les écuries de persévère
 
 ## Projet:
 Réalisation d'un site vitrine pour les écuries :
@@ -24,3 +20,40 @@ Réalisation d'une application pour la partie gestion des écuries :
 ### Technologies utilisées :
 - Front-end => [IONIC](https://ionicframework.com "IONIC") + [AngularJS](https://angular.io "AngularJS") + [TailwindCSS](https://tailwindcss.com "TailwindCSS")
 - Back-end / API / Base de données => Strapi
+
+[========]
+# Lancer le projet
+## Installations
+### Après avoir récupéré le projet
+Dans un CMD dans le dossier du projet :
+
+Installation de IONIC
+
+```sh
+npm install 
+```
+## Lancements
+Dans un CMD dans le dossier du projet :
+
+Lancement de TailwindCSS
+
+```sh
+npx tailwindcss build -i .\src\assets\css\style.css -o .\src\assets\css\output.css --watch
+```
+Dans un second CMD dans le dossier du projet :
+
+Lancement de IONIC
+
+```sh
+ionic serve
+```
+OU (pour le partager sur le réseau)
+
+```sh
+ionic serve --external
+```
+
+
+## Contributeurs ✨
+
+<table><tr><td align="center"><a href="https://github.com/CSIAUD"><img src="https://avatars.githubusercontent.com/u/74303569?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Cyprien SIAUD<br>💻🎨⚠️</b></sub></a></td><td align="center"><a href="https://github.com/Benji290402"><img src="https://avatars.githubusercontent.com/u/71979279?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Benjamin VIAL -- SIMON<br>💻🎨⚠️</b></sub></a></td><td align="center"><a href="https://github.com/Mateopalm"><img src="https://avatars.githubusercontent.com/u/73243815?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Matéo PALMIER<br>⚠️</b></sub></a></td></tr></table>
