@@ -18,10 +18,13 @@
 - Identique au site de gestion des écuries
 
 ### Technologies utilisées :
-- Front-end => [IONIC](https://ionicframework.com "IONIC") + [AngularJS](https://angular.io "AngularJS") + [TailwindCSS](https://tailwindcss.com "TailwindCSS")
-- Back-end / API / Base de données => Strapi
+- Front-end => [IONIC](https://ionicframework.com "IONIC") + [Angular](https://angular.io "AngularJS") + [TailwindCSS](https://tailwindcss.com "TailwindCSS")
+- Back-end / API / => Strapi
+- Base de données => MySQL
 
+<br>
 ---
+<br>
 
 # Lancer le projet
 ## Installations
@@ -51,7 +54,9 @@ $ npm install -g @ionic/cli
 ```sh
 npm install -D tailwindcss
 ```
-
+<br>
+---
+<br>
 ## Lancements
 Dans un CMD dans le dossier du projet :
 
@@ -73,7 +78,8 @@ OU (pour le partager sur le réseau)
 ```sh
 ionic serve --external
 ```
-
+<br>
+<br>
 
 ## Contributeurs ✨
 
