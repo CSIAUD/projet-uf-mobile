@@ -22,7 +22,10 @@ Réalisation d'une application pour la partie gestion des écuries :
 - Back-end / API / Base de données => Strapi
 
 ---
----
+----
+-----
+------
+-------
 
 # Lancer le projet
 ## Installations
