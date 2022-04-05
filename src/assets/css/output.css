@@ -566,16 +566,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 2.5rem;
 }
 
+.h-screen {
+  height: 100vh;
+}
+
 .h-24 {
   height: 6rem;
 }
 
 .h-28 {
   height: 7rem;
-}
-
-.h-20 {
-  height: 5rem;
 }
 
 .h-14 {
@@ -588,10 +588,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-full {
   height: 100%;
-}
-
-.h-screen {
-  height: 100vh;
 }
 
 .h-15\/20 {
@@ -622,12 +618,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 15rem;
 }
 
-.w-16 {
-  width: 4rem;
-}
-
 .w-screen {
   width: 100vw;
+}
+
+.w-16 {
+  width: 4rem;
 }
 
 .w-max {
@@ -681,10 +677,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .snap-start {
   scroll-snap-align: start;
-}
-
-.snap-end {
-  scroll-snap-align: end;
 }
 
 .snap-center {
@@ -747,12 +739,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   row-gap: 3rem;
 }
 
-.space-y-10 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
-}
-
 .space-y-4 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -763,6 +749,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-space-x-reverse: 0;
   margin-right: calc(2.5rem * var(--tw-space-x-reverse));
   margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-10 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
 }
 
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
@@ -797,6 +789,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .overflow-y-scroll {
@@ -861,13 +857,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-image: url('/assets/imgs/karine_cheval.jpg');
 }
 
-.from-black {
-  --tw-gradient-from: #000;
+.from-transparent {
+  --tw-gradient-from: rgba(0 ,0 ,0, 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(0 0 0 / 0));
 }
 
-.to-white {
-  --tw-gradient-to: #fff;
+.to-black {
+  --tw-gradient-to: #000;
 }
 
 .bg-cover {
@@ -896,6 +892,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .object-fill {
   object-fit: fill;
+}
+
+.p-3 {
+  padding: 0.75rem;
 }
 
 .p-4 {
@@ -1007,12 +1007,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   text-align: right;
 }
 
-.font-sans {
-  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-
 .font-oswald {
   font-family: Oswald, sans-serif;
+}
+
+.font-sans {
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .font-serif {
@@ -1026,6 +1026,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-9xl {
+  font-size: 8rem;
+  line-height: 1;
 }
 
 .text-2xl {
@@ -1127,10 +1132,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   opacity: 0.25;
 }
 
-.opacity-20 {
-  opacity: 0.2;
-}
-
 .duration-500 {
   transition-duration: 500ms;
 }
@@ -1188,6 +1189,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     align-items: flex-start;
   }
 
+  .sm\:space-y-20 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(5rem * var(--tw-space-y-reverse));
+  }
+
   .sm\:space-x-24 > :not([hidden]) ~ :not([hidden]) {
     --tw-space-x-reverse: 0;
     margin-right: calc(6rem * var(--tw-space-x-reverse));
@@ -1198,12 +1205,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
-  }
-
-  .sm\:space-y-20 > :not([hidden]) ~ :not([hidden]) {
-    --tw-space-y-reverse: 0;
-    margin-top: calc(5rem * calc(1 - var(--tw-space-y-reverse)));
-    margin-bottom: calc(5rem * var(--tw-space-y-reverse));
   }
 
   .sm\:space-y-10 > :not([hidden]) ~ :not([hidden]) {
@@ -1248,6 +1249,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   .sm\:text-5xl {
     font-size: 3rem;
     line-height: 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:block {
+    display: block;
   }
 }
 

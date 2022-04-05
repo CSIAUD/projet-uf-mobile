@@ -15,31 +15,35 @@ export class AppComponent {
     { 
       title: "Prestations", 
       pages: [
-        { title: "Travail du cheval et enseignement", url: "/folder/travail"},
-        { title: "Formules et tarifs", url: "/folder/formules"},
-        { title: "Stages", url: "/folder/stages"}
+        { title: "Travail du cheval et enseignement", url: "/prestas/travail"},
+        { title: "Formules et tarifs", url: "/prestas/formules"},
+        { title: "Stages", url: "/prestas/stages"}
       ]
     },
     { 
       title: "Philosophie",
       pages: [
-        { title: "De Travail", url: "/folder/travail"},
-        { title: "Comfortable Natural Life Paddock", url: "/folder/natural"}
+        { title: "De Travail", url: "/prestas/travail"},
+        { title: "Comfortable Natural Life Paddock", url: "/prestas/natural"}
       ]
     },
     { 
       title: "À nos côtés", 
       pages: [
-        { title: "Ils en parlent", url: "/folder/talk"},
-        { title: "Nos partenaires", url: "/folder/partners"},
-        { title: "La presse", url: "/folder/press"}
+        { title: "Ils en parlent", url: "/prestas/talk"},
+        { title: "Nos partenaires", url: "/prestas/partners"},
+        { title: "La presse", url: "/prestas/press"}
       ]
     },
   ];
 
   public lastPages = [
-    { title: 'Contact', url: '/folder/contact'},
-    { title: 'Blog', url: '/folder/blog'}
+    { title: 'Contact', url: '/prestas/contact'},
+    { title: 'Blog', url: '/prestas/blog'}
   ];
   constructor() {}
+  
+  public redirect(link: string) {
+    window.open(link,'_blank');
+  }
 }

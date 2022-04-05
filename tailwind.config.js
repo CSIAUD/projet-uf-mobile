@@ -22,7 +22,8 @@ module.exports = {
         'green': "#AEC676",
         'beige': "rgba(175 ,166 ,154, 0.7)",
         'citation-bg': "rgb(55 ,45 ,29)",
-        'citation-border': "rgb(101 ,86 ,78)"
+        'citation-border': "rgb(101 ,86 ,78)",
+        'transparent': "rgba(0 ,0 ,0, 0)"
       },
       spacing:{
         '1/20': "5%",

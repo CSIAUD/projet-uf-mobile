@@ -2,7 +2,7 @@
 
 ## Projet :
 #### Réalisation d'un site vitrine pour les écuries (partie membre) :
-- Reprise de l'ancien site : [https://www.ecuriesdepersevere.com](https://www.ecuriesdepersevere.com "https://www.ecuriesdepersevere.com")
+- Reprise de l'ancien site : [https://www.ecuriesdepersevere.com](https://www.ecuriesdepersevere.com "Les écuries de persévère")
 - Réutilisation de la charte graphique
 - Ajout d'un accès à la partie membre
 

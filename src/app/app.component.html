@@ -1,7 +1,7 @@
 <ion-app>
   <ion-split-pane contentId="main-content">
-    <ion-menu contentId="main-content" type="overlay">
-      <ion-content>
+    <ion-menu class="sm:hidden" contentId="main-content" type="overlay">
+      <ion-content class="flex flex-col justify-between">
         <ion-list id="menu-list">
           <ion-list-header>Écuries de persévère</ion-list-header>
           
@@ -17,14 +17,14 @@
           <ion-accordion-group>
             <ion-accordion *ngFor="let tog of toggles"> 
               <ion-item slot="header">
-              <ion-label>{{ tog.title }}</ion-label>
-            </ion-item>
-            
-            <ion-menu-toggle slot="content" *ngFor="let elem of tog.pages; let i = index">
-              <ion-item routerDirection="root" [routerLink]="[elem.url]" lines="none" detail="false" routerLinkActive="selected">
-                <ion-label style="padding-left: 15px; font-weight: lighter;">{{ elem.title }}</ion-label>
+                <ion-label>{{ tog.title }}</ion-label>
               </ion-item>
-            </ion-menu-toggle>
+            
+              <ion-menu-toggle slot="content" *ngFor="let elem of tog.pages; let i = index">
+                <ion-item routerDirection="root" [routerLink]="[elem.url]" lines="none" detail="false" routerLinkActive="selected">
+                  <ion-label style="padding-left: 15px; font-weight: lighter;">{{ elem.title }}</ion-label>
+                </ion-item>
+              </ion-menu-toggle>
             </ion-accordion>
           </ion-accordion-group>
   
@@ -37,8 +37,24 @@
           </ion-menu-toggle>
   
         </ion-list>
+        <div class="flex flex-col justify-between space-y-4 sm:space-y-20">
+          <h3 class="text-3xl font-normal font-oswald">Suivez nous !</h3>
+          <hr>
+          <div class="flex flex-row items-start space-x-10">
+            <span class="iconify w-10 h-10" data-icon="cib:facebook"></span>
+            <ion-buttons>
+              <button ion-button (click)="redirect('https://www.instagram.com/ecuries_de_persevere/')">
+                <span class="iconify w-10 h-10" data-icon="fontisto:instagram"></span>
+              </button>
+            </ion-buttons>
+          </div>
+        </div>
       </ion-content>
     </ion-menu>
-    <ion-router-outlet id="main-content"></ion-router-outlet>
+    <main class="flex flex-col">
+      <app-header></app-header>
+      <ion-router-outlet id="main-content" class="h-screen overflow-y-scroll overflow-x-hidden"></ion-router-outlet>
+      <!-- <app-footer></app-footer> -->
+    </main>
   </ion-split-pane>
 </ion-app>

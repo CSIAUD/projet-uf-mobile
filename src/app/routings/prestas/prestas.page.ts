@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-folder',
-  templateUrl: './folder.page.html',
-  styleUrls: ['./folder.page.scss'],
+  selector: 'app-Prestas',
+  templateUrl: './Prestas.page.html',
+  styleUrls: ['./Prestas.page.scss'],
 })
-export class FolderPage implements OnInit {
+export class PrestasPage implements OnInit {
   public title: string;
 
   constructor(private activatedRoute: ActivatedRoute) { }
