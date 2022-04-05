@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-// import { PrestasPage } from './Prestas.page';
+import { PrestasPage } from './prestas.page';
 
 const routes: Routes = [
-  {}
+  {
+    path: '',
+    component: PrestasPage
+  }
 ];
 
 @NgModule({

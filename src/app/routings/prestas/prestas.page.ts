@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-Prestas',
-  templateUrl: './Prestas.page.html',
-  styleUrls: ['./Prestas.page.scss'],
+  selector: 'app-prestas',
+  templateUrl: './prestas.page.html',
+  styleUrls: ['./prestas.page.scss'],
 })
 export class PrestasPage implements OnInit {
   public title: string;
