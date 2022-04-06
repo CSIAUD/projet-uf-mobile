@@ -5,11 +5,10 @@ import { TeamComponent } from './pages/team/team.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'landing', pathMatch: 'full' },
-  { path: 'prestas/:id', loadChildren: () => import('./routings/prestas/prestas.module').then( m => m.prestasPageModule) },
+  // { path: 'prestas/:id', loadChildren: () => import('./routings/prestas/prestas.module').then( m => m.prestasPageModule) },
   { path: "landing", component: LandingComponent},
-  { path: "team", component: TeamComponent}
-
-  
+  { path: "team", component: TeamComponent},
+  { path: '**', redirectTo: "landing", pathMatch: "full"}
 ];
 
 @NgModule({

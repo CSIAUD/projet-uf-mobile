@@ -4,10 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { PrestasPage } from './prestas.page';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: PrestasPage
-  }
+  { path: '',component: PrestasPage },
+  { path: '**', redirectTo: "/landing", pathMatch: "full"}
 ];
 
 @NgModule({

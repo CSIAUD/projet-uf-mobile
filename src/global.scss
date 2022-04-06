@@ -25,21 +25,14 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
-// ion-split-pane{ 
-//     --border: none !important;
-//     ion-menu{
-//      --background: var(--ion-color-primary) !important; 
-//         ion-content{            
-//             --background: var(--ion-color-primary) !important; 
-//             ion-list-header{ 
-//                 --background: var(--ion-color-primary) !important;
-//                 --color: #FFFFFF !important;   
-//             }
-//             ion-item{
-//                 --background: var(--ion-color-primary) !important;
-//                  --color: #FFFFFF !important;
-//                  ion-icon{ padding-right: 10px !important; }
-//             }
-//         }
-//     }
-// }
+html{
+    --dark: #120E01;
+    --maroon: #65564E;
+    --green: #AEC676;
+    --beige: rgba(175 ,166 ,154, 0.5);
+
+    --citation-bg: rgb(55 ,45 ,29);
+    --citation-border: rgb(101 ,86 ,78);
+    --citation-sides: rgb(146 ,132 ,112);
+    --citation-under: rgb(17 ,13 ,1);
+}
